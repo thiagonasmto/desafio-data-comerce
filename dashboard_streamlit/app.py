@@ -5,7 +5,7 @@ import plotly.express as px
 # Função para criar o gráfico top 3 exportados por todos os estados
 def grafico_top_3_exportados_estado(df, ano_selecionado):
     # 1. Top 3 produtos mais exportados por todos os estados
-    df_exp = df[(df["tipo"] == "Exportação") & (df["ano"] == ano_selecionado)]  # Filtro de ano adicionado
+    df_exp = df[(df["tipo"] == "Exportação") & (df["ano"] == ano_selecionado)]
     exportados_estado = df_exp.groupby(['estado', 'produto'])['quantidade'].sum().reset_index()
     exportados_top_3_estado = exportados_estado.sort_values('quantidade', ascending=False).groupby(['estado']).head(3)
 
@@ -86,7 +86,7 @@ def grafico_mensal_exportacao(df, estado_selecionado):
 # Função para criar o gráfico top 3 importados por todos os estados
 def grafico_top_3_importados_estado(df, ano_selecionado):
     # 1. Top 3 produtos mais importados por todos os estados
-    df_imp = df[(df["tipo"] == "Importação") & (df["ano"] == ano_selecionado)]  # Filtro de ano adicionado
+    df_imp = df[(df["tipo"] == "Importação") & (df["ano"] == ano_selecionado)]
     importados_estado = df_imp.groupby(['estado', 'produto'])['quantidade'].sum().reset_index()
     importados_top_3_estado = importados_estado.sort_values('quantidade', ascending=False).groupby(['estado']).head(3)
 
