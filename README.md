@@ -177,8 +177,3 @@ Sinta-se livre para abrir *issues* ou *pull requests* para melhorias nas duas ve
 A versão Streamlit serve como protótipo funcional e inspiração para o desenvolvimento completo da aplicação web.
 
 ---
-
-```
-
-Se quiser, posso gerar esse arquivo e te enviar pronto para salvar no repositório. Deseja isso?
-```
