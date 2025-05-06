@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:8000/')
       .then(response => {
-        console.log(response);  // Logando a resposta
+        console.log(response);
         return response.json();
       })
       .then(data => setMessage(data.message))
