@@ -1,0 +1,73 @@
+.dash-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    height: 100vh;
+    width: 260px;
+    background-color: #2d3748;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+  
+  .upload-label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .upload-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .filter-select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    display: block;
+    background-color: #4a5568;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn:hover {
+    background-color: #1a202c;
+  }
+  
+  .main-content {
+    margin-left: 260px;
+    padding: 20px;
+    flex: 1;
+  }
+
+  .loading-indicator {
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+  
